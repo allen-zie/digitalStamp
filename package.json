@@ -1,5 +1,6 @@
 {
   "name": "digital-stamp-creator",
+  "homepage": "https://allen-zie.github.io/digitalStamp/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
